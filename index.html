@@ -1,8 +1,15 @@
 <!DOCTYPE html>
 <html>
 	<head> 
+		<script src="https://unpkg.com/anchor-link@3"></script>
+		<script src="https://unpkg.com/anchor-link-browser-transport@3"></script>
+	
 		<script src='./src/waxjs.js'></script>
+		
 		<script src='./src/mijs.js'></script>
+		<script src='./src/anchor.js'></script>
+		<script src='./src/wcw.js'></script>
+		
 		<link href="./css/micss.css" rel="stylesheet" type="text/css" />
 		<title>el Rodo NFT</title>
 		
@@ -12,13 +19,22 @@
 		
 		<div>---<br><label>Errores:</label>
 		<h3 id="response"></h3><br>---</div>
-		
+		<div>
 		<button id="log" onclick=login()>Login WCW</button>
-		<button id="log" onclick=logout() style="float: right;">Log Out WCW</button>
-		<h2>
-		<label>User:</label><input id="user" class="user">
-		</h2>
+		<button id="log" onclick=logout()>Log Out WCW</button>
+		</div>
+		<br>---
 		
+		<div>
+        <button id="log" onclick="loginAnchor()">Login Anchor</button>
+		<button id="log" onclick="logoutAnchor()">Log out Anchor</button>
+		</div>
+		
+		<br>---
+		<h2>
+		<label>User:</label><p id="user" class="user"></p>
+		</h2>
+		<br>---
 		<center>
 		<h2><span id="holderspan"></h2></span>
 		
